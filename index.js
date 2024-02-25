@@ -79,7 +79,7 @@ client.on("messageCreate",(message)=>{
 
 
 app.listen(process.env.PORT,(res,req)=>{
-    res.write("Im alive")
+    res.send("Im alive")
     res.end()
 })
 
