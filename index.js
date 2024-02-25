@@ -87,12 +87,4 @@ client.on("messageCreate",(message)=>{
    
 })
 
-
-
-app.listen(process.env().PORT,(res,req)=>{
-    res.write("Im alive")
-    res.end()
-})
-
-
 client.login(process.env.TOKEN);
