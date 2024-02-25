@@ -78,7 +78,7 @@ client.on("messageCreate",(message)=>{
 
 
 
-app.listen(process.env().PORT,(res,req)=>{
+app.listen(process.env.PORT,(res,req)=>{
     res.write("Im alive")
     res.end()
 })
