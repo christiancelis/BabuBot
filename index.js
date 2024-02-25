@@ -2,9 +2,14 @@ import { Client, IntentsBitField } from 'discord.js';
 
 import {config} from 'dotenv'
 
-import {express} from "express"
+import express from "express"
 
 let app = express()
+app.listen(3000,(res,req)=>{
+    console.log("im alive")
+    res.end()
+})
+
 
 
 config();
@@ -76,12 +81,6 @@ client.on("messageCreate",(message)=>{
    
 })
 
-
-
-app.listen(process.env().PORT,(res,req)=>{
-    res.write("Im alive")
-    res.end()
-})
 
 
 client.login(process.env.TOKEN);
