@@ -4,9 +4,10 @@ import {config} from 'dotenv'
 
 import {express} from "express"
 
+let app = express()
+
 
 config();
-
 
 
 
@@ -77,7 +78,7 @@ client.on("messageCreate",(message)=>{
 
 
 
-express.listen(3000,(res,req)=>{
+app.listen(process.env().PORT,(res,req)=>{
     res.write("Im alive")
     res.end()
 })
