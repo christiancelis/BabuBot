@@ -2,7 +2,7 @@ import { Client, IntentsBitField } from 'discord.js';
 
 import {config} from 'dotenv'
 
-import {express} from "express"
+import express from "express"
 
 let app = express()
 
