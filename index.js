@@ -2,7 +2,12 @@ import { Client, IntentsBitField } from 'discord.js';
 
 import {config} from 'dotenv'
 
+import {express} from "express"
+
+
 config();
+
+
 
 
 const client = new Client({ intents: [
@@ -68,6 +73,13 @@ client.on("messageCreate",(message)=>{
         message.reply("Y es que no se piensa Graduar?")
     }
    
+})
+
+
+
+express.listen(3000,(res,req)=>{
+    res.write("Im alive")
+    res.end()
 })
 
 
