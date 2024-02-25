@@ -4,12 +4,18 @@ import {config} from 'dotenv'
 
 import express from "express"
 
-let app = express()
-app.listen(3000,(res,req)=>{
-    console.log("im alive")
-    res.end()
-})
 
+const app = express()
+
+//settings
+const port = process.env.PORT || 3000
+
+app.set("port",port)
+
+//run server
+app.listen(app.get("port"),()=>{
+    console.log(`server up on port ${app.get("port")}`)
+})
 
 
 config();
