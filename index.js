@@ -71,6 +71,10 @@ client.on("messageCreate",(message)=>{
     if(Mensaje.includes("tesis")){
         message.reply("Y es que no se piensa Graduar?")
     }
+
+    if(Mensaje.includes("estaño")){
+         message.reply("aluminiu")
+    }
    
 })
 client.login(process.env.TOKEN);
