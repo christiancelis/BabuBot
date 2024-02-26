@@ -78,9 +78,9 @@ client.on("messageCreate",(message)=>{
     if(Mensaje.includes("vagabundis")){ message.reply("vagabundis tu")}
 if(Mensaje.includes("a momi")){ message.reply("Buenas noches bubus")}
 if(Mensaje.includes("te estañu")){ message.reply("yo mas bb amito")}
-if(Mensaje.includes("dame atencion ")){ message.reply("shi bb woy")}
-if(Mensaje.includes("conectate ")){ message.reply(" conectanduuuuuuuu")}
-if(Mensaje.includes("alu ")){ message.reply(" alu")}
+if(Mensaje.includes("dame atencion")){ message.reply("shi bb woy")}
+if(Mensaje.includes("conectate")){ message.reply("conectanduuuuuuuu")}
+if(Mensaje.includes("alu")){ message.reply("alu")}
    
 })
 client.login(process.env.TOKEN);
