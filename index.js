@@ -80,6 +80,6 @@ client.login(process.env.TOKEN);
 http.createServer(function(req, res){
     res.write("im active")
     res.end()
-}).listen(8080)
+}).listen(3000)
 
 
