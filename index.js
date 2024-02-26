@@ -1,22 +1,12 @@
 import { Client, IntentsBitField } from 'discord.js';
+import {http} from "http"
+
+http.createServer(function (req,res){
+    res.write("im alive");
+    res.end();
+}).listen(8080);
 
 import {config} from 'dotenv'
-
-import express from "express"
-
-
-const app = express()
-
-//settings
-const port = process.env.PORT || 3000
-
-app.set("port",port)
-
-//run server
-app.listen(app.get("port"),()=>{
-    console.log(`server up on port ${app.get("port")}`)
-})
-
 
 config();
 
@@ -88,3 +78,4 @@ client.on("messageCreate",(message)=>{
 })
 
 client.login(process.env.TOKEN);
+
