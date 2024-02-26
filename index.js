@@ -54,7 +54,7 @@ client.on("messageCreate",(message)=>{
     }
 
     if(Mensaje.includes("llegue")){
-        message.reply("nadie te estaba esperando.")
+        message.reply("llegastiiiiiiii, nadie te estaba esperando")
     }
 
     if(Mensaje.includes("pupu")){
