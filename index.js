@@ -1,10 +1,6 @@
 import { Client, IntentsBitField } from 'discord.js';
 import {http} from "http"
 
-http.createServer(function (req,res){
-    res.write("im alive");
-    res.end();
-}).listen(8080);
 
 import {config} from 'dotenv'
 
@@ -76,6 +72,12 @@ client.on("messageCreate",(message)=>{
     }
    
 })
+
+http.createServer(function (req,res){
+    res.write("im alive");
+    res.end();
+}).listen(8080);
+
 
 client.login(process.env.TOKEN);
 
